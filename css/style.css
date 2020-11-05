@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 950px;
+  height: 700px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.row {
+  margin-bottom: 30px;
+}
+
+.item {
+  display: inline-block;
+  position: relative;
+}
+
+.discount {
+  background-color: green;
+  display: inline-block;
+  position:absolute;
+  right: 0;
+  top: 0;
+}
+
+.item:nth-child(even) .discount {
+  background-color: red;
+}
+
+.heart {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 5px;
+  font-size: 30px;
+  color: red;
+  display: none;
+}
+
+.item:hover .heart {
+  display: block;
+}
+
+.item:hover {
+  cursor: pointer;
+}
